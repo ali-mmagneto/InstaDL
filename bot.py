@@ -12,7 +12,7 @@ def send_welcome(message: types.Message):
     admin_button = types.InlineKeyboardButton(text="Автор", url="https://t.me/SJ_Lynx")
     keyboard.add(channel_button, admin_button)
     chat_id = message.chat.id
-    bot.send_message(message.chat_id, "Здравствуйте, пришлите мне ссылку на пост в instagram для скачивания", reply_markup=keyboard))
+    bot.send_message(chat_id, "Здравствуйте, пришлите мне ссылку на пост в instagram для скачивания", reply_markup=keyboard)
 
 
 @bot.message_handler(content_types=['text'])
